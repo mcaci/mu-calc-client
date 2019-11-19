@@ -21,7 +21,8 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	addr := "http://172.17.0.2:4000/add"
+	// docker exec -it add-cont ip addr show eth0
+	addr := "http://172.17.0.2:8080/add"
 	log.Println(addr)
 	resp, err := http.Post(addr, "application/json", bytes.NewBuffer(requestBody))
 	if err != nil {
