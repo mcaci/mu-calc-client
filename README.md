@@ -1,4 +1,4 @@
-# Fibonacci microservice
+# Calc microservice
 
 ## Direct usage
 
