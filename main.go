@@ -21,7 +21,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	resp, err := http.Post("http://localhost:4000/add", "application/json", bytes.NewBuffer(requestBody))
+	resp, err := http.Post("http://172.17.0.1:4000/add", "application/json", bytes.NewBuffer(requestBody))
 	if err != nil {
 		log.Fatalln(err)
 	}
