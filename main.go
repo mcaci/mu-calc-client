@@ -21,7 +21,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	addr := "http://172.17.0.1:4000/add"
+	addr := "172.17.0.2:4000/add"
 	log.Println(addr)
 	resp, err := http.Post(addr, "application/json", bytes.NewBuffer(requestBody))
 	if err != nil {
