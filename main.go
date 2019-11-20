@@ -38,33 +38,4 @@ func main() {
 	}
 
 	log.Println(string(body))
-
-	// var (
-	// 	httpCalcr = flag.String("http", ":8080", "http listen calcress")
-	// )
-	// flag.Parse()
-	// ctx := context.Background()
-
-	// srv := serv.NewFibonacciService()
-	// errChan := make(chan error)
-
-	// go func() {
-	// 	c := make(chan os.Signal, 1)
-	// 	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
-	// 	errChan <- fmt.Errorf("%s", <-c)
-	// }()
-
-	// // mapping endpoints
-	// endpoints := serv.Endpoints{
-	// 	FibonacciEndpoint: serv.MakeFibonacciEndpoint(srv),
-	// }
-
-	// // HTTP transport
-	// go func() {
-	// 	log.Println("fibonacci is listening on port:", *httpCalcr)
-	// 	handler := serv.NewHTTPServer(ctx, endpoints)
-	// 	errChan <- http.ListenAndServe(*httpCalcr, handler)
-	// }()
-
-	// log.Fatalln(<-errChan)
 }
